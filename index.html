@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filigrameur</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Ajoutez un filigrane à n'importe quel document</h1>
+    <h2>L’ajout d’un filigrane sur vos documents est une bonne pratique mais certains organismes peuvent avoir besoin d’un document vierge (banques, services publics, etc.)</h2>
+    <p>Sélectionner des fichiers :<br>
+        Formats supportés : jpg, png, pdf.</p>
+    <input type="file" id="file" name="file" accept=".jpg, .png">
+    <p>Indiquez le filigrane à insérer :</p>
+    <input type="text" id="watermark" name="watermark">
+    <p>Position du filigrane :</p>
+    <select id="position" name="position">
+        <option value="all">Partout</option>
+        <option value="top-left">Haut gauche</option>
+        <option value="top-right">Haut droite</option>
+        <option value="bottom-left">Bas gauche</option>
+        <option value="bottom-right">Bas droite</option>
+        <option value="center">Centre</option>
+    </select>
+    <button id="submit">ajouter un filigrane</button>
+
+
+    <p> inspiré de <a href="https://filigrane.beta.gouv.fr/">https://filigrane.beta.gouv.fr/</a> mais ici, sa tourne chez vous 😉</p>
+    <script src="script.js"></script>
+
+</body>
+</html>
