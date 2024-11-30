@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <title>Watermarker</title>
+
+    <link rel="stylesheet" href="/static/bootstrap-5.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/custom/css/style.css">
+    <link rel="icon" href="/static/custom/icon/favicon.png">
+</head>
+<body class="bg-light-subtle text-light-emphasis">
+    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+        <a class="navbar-brand ps-3" id="babbz-title" href="/">babbz.net</a>
+    </nav>
+
+    <div class="container">
+        <div class="row m-4">
+            <div class="col font-monospace">
+                <h1 class="text-black">Watermarker</h1>
+                <p>
+                    Watermarking is the process of adding text, logos, or patterns to an image to
+                    indicate ownership, provide protection, or enhance branding. It's widely used 
+                    to deter unauthorized use of images and ensure attribution.
+                </p>
+
+                <h3 class="text-black">How to Add a Watermark Using This Form</h3>
+                <ol>
+                    <li>
+                        <strong>Select an Image:</strong>
+                        Use the "Choose File" button to upload an image in one of the supported formats: 
+                        <span class="text-danger fw-lighter">.jpg</span>, <span class="text-danger fw-lighter">.jpeg</span>, or <span class="text-danger fw-lighter">.png</span>.
+                    </li>
+                    <li>
+                        <strong>Enter Your Watermark Text:</strong>
+                        In the "Watermark" input field, type the text you wish to overlay on the image.
+                    </li>
+                    <li>
+                        <strong>Submit:</strong>
+                        Click the "Add a watermark" button to apply the watermark. The process will overlay 
+                        the entered text onto the uploaded image, ensuring your content is protected.
+                    </li>
+                </ol>
+
+                <div class="border border-secondary-subtle">
+                    <form id="formu-watermark" action="/" method="get">
+
+                        <div class="m-3">
+                            <div class="input-group">
+                                <input type="file" class="form-control" id="file" name="file" accept=".jpg,  .jpeg, .png" required>
+                            </div>
+                            <div class="form-text" id="basic-addon4">Supported formats : <span class="text-danger fw-lighter">jpg, jpeg, png</span>.</div>
+                        </div>
+    
+                        <div class="m-3">
+                            <div class="input-group">
+                                <input type="text" id="watermark" name="watermark" class="form-control" placeholder="watermark" aria-label="Watermark" aria-describedby="basic-addon1" required>
+                            </div>
+                            <div class="form-text" id="basic-addon4">Indicate the watermark to be inserted.</div>
+                        </div>
+                        <button type="submit" class="btn btn-danger m-2">Add a watermark</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/custom/js/script.js"></script>
+    <script src="/static/bootstrap-5.3/js/bootstrap.min.js"></script>
+</body>
+</html>

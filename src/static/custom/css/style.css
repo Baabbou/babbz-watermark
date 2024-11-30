@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'pixelzs';
+    src: url('../fonts/SuperPixel-m2L8j.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#babbz-title {
+    font-family: 'pixelzs', sans-serif;
+    color: whitesmoke;
+}

@@ -1,0 +1,24 @@
+services:
+  watermarker:
+    image: watermarker
+    networks:
+      watermarker:
+        ipv4_address: 10.0.177.6
+    container_name: watermarker
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    restart: always
+    ports:
+      - "127.0.0.1:20002:8080"
+    read_only: true
+    mem_limit: 2g
+    cpus: 2
+
+networks:
+  watermarker:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.0.177.4/30
+          gateway: 10.0.177.5
