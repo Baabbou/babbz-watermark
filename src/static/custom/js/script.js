@@ -16,6 +16,7 @@ window.addEventListener('DOMContentLoaded', event => {
                 alert('File must be an image (jpg, jpeg, png)');
             }
             else{
+                var opacity = document.getElementById("opacity").value;
                 var img = new Image();
                 img.onload = function(){
                     var canvas = document.createElement('canvas');
@@ -24,7 +25,7 @@ window.addEventListener('DOMContentLoaded', event => {
                     canvas.height = img.height;
                     ctx.drawImage(img, 0, 0);
                     ctx.font = '48px Arial';
-                    ctx.fillStyle = 'rgba(80, 80, 80, 0.25)';
+                    ctx.fillStyle = 'rgba(80, 80, 80, ' + opacity + ')';
 
                     watermarkDraw(ctx, watermark, img.width, img.height);
 

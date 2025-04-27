@@ -60,7 +60,20 @@
                             </div>
                             <div class="form-text" id="basic-addon4">Indicate the watermark to be inserted.</div>
                         </div>
-                        <button type="submit" class="btn btn-danger m-2">Add a watermark</button>
+
+                        <div class="m-3">
+                            <div class="d-flex justify-content-between">
+                                <span>0</span>
+                                <span>0.25</span>
+                                <span>0.5</span>
+                                <span>0.75</span>
+                                <span>1</span>
+                            </div>
+                            <input type="range" class="form-range" id="opacity" name="opacity" min="0" max="1" step="0.01" value="0.25">
+                            <div class="form-text">Adjust the opacity of the text (0 = transparent / 1 = opaque)</div>
+                        </div>
+
+                        <button type="submit" class="btn btn-danger text-black m-2">Add a watermark</button>
                     </form>
                 </div>
             </div>
